@@ -48,16 +48,16 @@ function draw() {
   // put drawing code here
 }
 
-function randomArray(var num) {
+function randomArray(num) {
   var values = new array(num);
 
-  for (int i=0; i<values.length; i++) {
+  for (var i=0; i<values.length; i++) {
     values[i] = int(random(100, 400));
   }//random value loop
   return values;
 }//randomArray
 
-function displayArray(int[] arr, int p, int se, int iv) {
+function displayArray(arr, p, se, iv) {
   var barWidth = width / arr.length;
   var x = 0;
   var y = 0;
