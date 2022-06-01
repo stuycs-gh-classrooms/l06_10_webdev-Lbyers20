@@ -7,11 +7,11 @@ function setup() {
   frameRate(5);
   createCanvas(400, 400);
   background(0);
-  arr = randomArray(10);
+  arr = new randomArray(10);
 
   sortEnd = 0;
   pos = sortEnd + 1;
-  insertVal = arr[pos];
+  insertVal = arr(pos);
   // put setup code here
 }
 
@@ -48,8 +48,8 @@ function draw() {
   // put drawing code here
 }
 
-int[] randomArray(int num) {
-  int[] values = new int[num];
+function randomArray(var num) {
+  var values = new array(num);
 
   for (int i=0; i<values.length; i++) {
     values[i] = int(random(100, 400));
@@ -57,12 +57,12 @@ int[] randomArray(int num) {
   return values;
 }//randomArray
 
-void displayArray(int[] arr, int p, int se, int iv) {
-  int barWidth = width / arr.length;
-  int x = 0;
-  int y = 0;
+function displayArray(int[] arr, int p, int se, int iv) {
+  var barWidth = width / arr.length;
+  var x = 0;
+  var y = 0;
   noStroke();
-  for (int i=0; i<arr.length; i++) {
+  for (var i=0; i<arr.length; i++) {
     y = height - arr[i];
     if (i == p ) {
       fill(0, 230, 230);
