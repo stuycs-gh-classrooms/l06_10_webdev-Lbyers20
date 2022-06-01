@@ -1,4 +1,4 @@
-var arr[];
+var arr;
 var pos; //current position to test
 var sortEnd; //end of the sorted portion
 var insertVal; //value to be added
@@ -27,7 +27,7 @@ function draw() {
   displayArray(arr, pos, sortEnd, insertVal);
     //compare insertVal and arr[pos -1]
     //if pos is not 0 AND inserVal <
-    if (pos != 0 && insertVal < arr[pos-1] ) {
+    if (pos != 0 && insertVal < arr(pos-1) ) {
       //move value at [pos-1] to [pos]
       arr[pos] = arr[pos-1];
       //decrease pos
