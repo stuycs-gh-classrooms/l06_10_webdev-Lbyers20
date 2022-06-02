@@ -8,9 +8,7 @@ function setup() {
   let ySpeed = random(1, 5);
   let = random(width/4, 3*width/4);
   let = random(height/4, 3*height/4);
-}
 
-function draw() {
   background(100);
   circle(x, y, 2* radius);
   x += xSpeed;
