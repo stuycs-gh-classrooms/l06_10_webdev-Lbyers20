@@ -9,6 +9,7 @@ function setup() {
   let = random(width/4, 3*width/4);
   let = random(height/4, 3*height/4);
 
+  while(radius < 1000){
   background(100);
   circle(x, y, 2* radius);
   x += xSpeed;
@@ -19,5 +20,6 @@ function setup() {
   }
   else if(y >= height - radius || y <= radius){
     ySpeed *= -1;
+  }
   }
 }
