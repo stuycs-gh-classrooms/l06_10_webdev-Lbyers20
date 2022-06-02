@@ -1,34 +1,25 @@
-function setup ()
-{
-  background (#FFFFFF);
-  createCanvas (500, 500);
+function setup() {
+  createCanvas(400, 400);
+  background(100);
+  fill(255);
+  
+  let radius = 30;
+  let xSpeed = random(1, 5);
+  let ySpeed = random(1, 5);
+  let = random(width/4, 3*width/4);
+  let = random(height/4, 3*height/4);
 
-  let x=random (500);
-  let y=random (500);
-  let z=random (100);
-  let a= random (100);
-
-  let b= random (0, 256);
-  let c= random (0, 256);
-  let d= random (0, 256);
-
-  while (x < 500)
-  {
-    rectangle (x, y, z, a, b, c, d);
-    x=random (500);
-    y=random (500);
-    z=random (100);
-    a= random (100);
-
-    b= random (0, 250);
-    c= random (0, 250);
-    d= random (0, 250);
+  while(radius < 1000){
+  background(100);
+  circle(x, y, 2* radius);
+  x += xSpeed;
+  y += ySpeed;
+   
+  if(x >= width - radius || x <= radius){
+    xSpeed *= -1;
+  }
+  else if(y >= height - radius || y <= radius){
+    ySpeed *= -1;
+  }
   }
 }
-function rectangle (x, y, z, a, b, c, d)
-{
-  fill (b, c, d);
-  rect (x, y, z, a);
-}
-
-
