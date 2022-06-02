@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(400, 400);
-  background(0);
+  background(100);
   fill(255);
   
   let radius = 30;
@@ -11,7 +11,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(100);
   circle(x, y, 2* radius);
   x += xSpeed;
   y += ySpeed;
